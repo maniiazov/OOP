@@ -42,6 +42,6 @@ print(lion.feed_milk())
 
 print("\n")
 
-tiger = Predator(name="Тигр", color="оранжевый", eat="мясо", fur="полосатая", power=45)
+tiger = Predator(name="Тигр", color="оранжевый", eat="мясо", fur="полосатая", power="45")
 print(tiger)
 print(tiger.hunt())
