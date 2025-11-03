@@ -240,33 +240,33 @@
 # snake.eat(); snake.sleep() 
  
  
-from abc import ABC, abstractmethod 
-class Document(ABC): 
-    @abstractmethod 
-    def open(self): 
-        pass 
-    def edit(self): 
-        pass 
-    def save(self): 
-        pass 
-class WordDocument(Document): 
-    def open(self): print('Открыт документ Word.') 
-    def edit(self): print('Редактируется документ Word.') 
-    def save(self): print('Файл сохранён.') 
-class PdfDocument(Document): 
-    def open(self): print('Открыт PDF документ.') 
-    def edit(self): print('Редактируется PDF документ.') 
-    def save(self): print('Файл сохранён.') 
-class SpreadsheetDocument(Document): 
-    def open(self): print('Открыта таблица.') 
-    def edit(self): print('Редактируется таблица.') 
-    def save(self): print('Файл сохранён.') 
-word = WordDocument() 
-pdf = PdfDocument() 
-sheet = SpreadsheetDocument() 
-word.open(); word.edit(); word.save() 
-pdf.open(); pdf.edit(); pdf.save() 
-sheet.open(); sheet.edit(); sheet.save()
+# from abc import ABC, abstractmethod 
+# class Document(ABC): 
+#     @abstractmethod 
+#     def open(self): 
+#         pass 
+#     def edit(self): 
+#         pass 
+#     def save(self): 
+#         pass 
+# class WordDocument(Document): 
+#     def open(self): print('Открыт документ Word.') 
+#     def edit(self): print('Редактируется документ Word.') 
+#     def save(self): print('Файл сохранён.') 
+# class PdfDocument(Document): 
+#     def open(self): print('Открыт PDF документ.') 
+#     def edit(self): print('Редактируется PDF документ.') 
+#     def save(self): print('Файл сохранён.') 
+# class SpreadsheetDocument(Document): 
+#     def open(self): print('Открыта таблица.') 
+#     def edit(self): print('Редактируется таблица.') 
+#     def save(self): print('Файл сохранён.') 
+# word = WordDocument() 
+# pdf = PdfDocument() 
+# sheet = SpreadsheetDocument() 
+# word.open(); word.edit(); word.save() 
+# pdf.open(); pdf.edit(); pdf.save() 
+# sheet.open(); sheet.edit(); sheet.save()
 
  
  
@@ -281,7 +281,7 @@ sheet.open(); sheet.edit(); sheet.save()
 #         print(f'Отправка Push-уведомления: {message}') 
 # notifications = [EmailNotification(), SMSNotification(), PushNotification()] 
 # for notification in notifications: 
-#     notification.send("Привет!") 
+#     notification.send("Салам алейкум") 
  
  
 # class Square: 

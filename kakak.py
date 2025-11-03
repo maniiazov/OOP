@@ -1,8 +1,8 @@
-number_1=  10
-number_2= 122
-number_3= 2233
-# print(number_1+number_1/number_3)
-print(f"{number_1}+{number_2}+{number_3}={number_1+number_2+number_3}")
+data = [1, 2, 3, 2, 4, 1, 5, 3]
+unique_data = []
 
+for item in data:
+    if item not in unique_data:
+        unique_data.append(item)
 
-print("Hello. This is my new Live")
+print("Список без повторений:", unique_data)
