@@ -1,1 +1,0 @@
-curl -o mockdata.txt  "https://github.com/narmuhamedov/IT-125/blob/master/OOP/lessonsRegular/mockdata.txt"
