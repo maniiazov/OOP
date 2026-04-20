@@ -1,4 +1,5 @@
 import random
+import smtplib
 
 class Revolver:
     def __init__(self):
@@ -19,3 +20,27 @@ class Revolver:
         if result or self.current_step >= self.capacity:
             self.spin()
         return result
+    
+from email.message import EmailMessage
+
+def send_notification(name):
+
+    msg = EmailMessage()
+    msg.set_content(f"Создана новая анкета на имя: {name}")
+    msg['Subject'] = 'Регистрация анкеты'
+    msg['From'] = "your_email@gmail.com"  
+    msg['To'] = "recipient@mail.ru"      
+
+
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+            smtp.login("your_email@gmail.com", "your_app_password")
+            smtp.send_message(msg)
+        return True
+    except Exception as e:
+        print(f"Ошибка почты: {e}")
+        return False
+
+def validate_input(text):
+
+    return len(text.strip()) > 0
