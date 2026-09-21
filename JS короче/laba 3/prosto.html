@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 3 заряженная лаба</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .task-title {
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 8px;
+    }
+    .result {
+      font-family: monospace;
+      font-size: 16px;
+      background: #e9ecef;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Результаты выполнения функций</h1>
+
+  <div class="card">
+    <div class="task-title">1. Генерация диапазона getRange(10, 30, 5)</div>
+    <div class="result" id="res1"></div>
+  </div>
+
+  <div class="card">
+    <div class="task-title">2. Переворот строки myReverse("123456789")</div>
+    <div class="result" id="res2"></div>
+  </div>
+
+  <div class="card">
+    <div class="task-title">3. Маскирование карты maskCard("4815154823541789", "*")</div>
+    <div class="result" id="res3"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
