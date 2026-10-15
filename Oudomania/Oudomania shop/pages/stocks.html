@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции | Oudomania</title>
+    <link rel="icon" type="image/jpeg" href="../img/Абоки.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/stocks.css">
+</head>
+<body>
+
+    <header class="header bg-white border-bottom sticky-top">
+        <nav class="navbar navbar-light py-3">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between w-100 flex-nowrap">
+                    <div class="flex-grow-1" style="flex-basis: 0;">
+                        <span class="text-muted small text-uppercase" style="letter-spacing: 1px;">📍 Москва</span>
+                    </div>
+
+                    <a class="navbar-brand mx-auto logo" href="../templates/index.html" style="text-decoration: none; color: inherit; margin: 0;">Oudomania</a>
+
+                    <div class="d-flex gap-3 flex-grow-1 justify-content-end" style="flex-basis: 0;">
+                        <button class="icon-btn border-0 bg-transparent">🔍</button>
+                        <a href="profile.html" class="icon-btn text-decoration-none">👤</a>
+                        <a href="cart.html" href="../templates/cart.html" class="icon-btn text-decoration-none">🛒</a>
+                    </div>
+                </div>
+
+                <div class="w-100 mt-3">
+                    <ul class="nav justify-content-center text-uppercase gap-4" style="font-size: 13px; list-style: none; padding: 0; display: flex; flex-wrap: nowrap;">
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="../pages/news.html">Новости</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="../pages/catalog.html">каталог</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="brands.html">бренды</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark active" href="stocks.html">акции</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="../pages/news.html">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="promos-container">
+        <div class="promos-header">
+            <h1 class="brands-header-title">Акции и предложения <span class="brands-count">(12)</span></h1>
+            <p class="promos-subtitle">Эксклюзивные условия на ваши любимые ароматы</p>
+        </div>
+
+        <div class="promo-grid">
+            <div class="promo-item">
+                <div class="promo-label sale">-15%</div>
+                <div class="promo-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80" alt="Tom Ford">
+                </div>
+                <div class="promo-info">
+                    <span class="promo-tag">Бренд недели</span>
+                    <h3>Мир Tom Ford</h3>
+                    <p>Скидка на всю линейку Private Blend при заказе от 10 000 ₽.</p>
+                    <a href="catalog.html" class="promo-btn">Выбрать аромат</a>
+                </div>
+            </div>
+
+            <div class="promo-item">
+                <div class="promo-label gift">GIFT</div>
+                <div class="promo-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80" alt="Gift">
+                </div>
+                <div class="promo-info">
+                    <span class="promo-tag">Подарок</span>
+                    <h3>Сет миниатюр</h3>
+                    <p>Получите дорожный набор из 3-х семплов при покупке любого флакона 100 мл.</p>
+                    <a href="catalog.html" class="promo-btn">В каталог</a>
+                </div>
+            </div>
+
+            <div class="promo-item">
+                <div class="promo-label new">NEW</div>
+                <div class="promo-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80" alt="Lumiere">
+                </div>
+                <div class="promo-info">
+                    <span class="promo-tag">Новинка</span>
+                    <h3>Lumière D'Été</h3>
+                    <p>Почувствуйте солнце. Специальная цена на запуск нового аромата от Oudomania.</p>
+                    <a href="catalog.html" class="promo-btn">Попробовать</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-white border-top py-5 text-center mt-5">
+    <div class="container">
+        <div class="logo mb-4">Oudomania</div>
+        <div class="d-flex justify-content-center gap-4 mb-4 small text-uppercase" style="letter-spacing: 1px;">
+            <a href="https://instagram.com/ТВОЙ_НИК" class="text-muted text-decoration-none" target="_blank">Instagram</a>
+            <a href="https://t.me/AirParfum_bot" class="text-muted text-decoration-none" target="_blank">Telegram</a>
+            <a href="https://wa.me/79000000000" class="text-muted text-decoration-none" target="_blank">WhatsApp</a>
+        </div>
+        <p class="text-muted" style="font-size: 11px;">© 2026 OUDOMANIA SHOP. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

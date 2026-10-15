@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог | Oudomania</title>
+    <link rel="icon" type="image/jpeg" href="../img/Абоки.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+
+    <header class="header bg-white border-bottom sticky-top">
+        <nav class="navbar navbar-light py-3">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between w-100 flex-nowrap">
+                    <div class="flex-grow-1" style="flex-basis: 0;">
+                        <span class="text-muted small text-uppercase" style="letter-spacing: 1px;">📍 Москва</span>
+                    </div>
+
+                    <a class="navbar-brand mx-auto logo" href="../templates/index.html" style="text-decoration: none; color: inherit; margin: 0;">Oudomania</a>
+
+                    <div class="d-flex gap-3 flex-grow-1 justify-content-end" style="flex-basis: 0;">
+                        <button class="icon-btn border-0 bg-transparent">🔍</button>
+                        <a href="profile.html" class="icon-btn text-decoration-none">👤</a>
+                        <a href="cart.html" href="../templates/cart.html" class="icon-btn text-decoration-none">🛒</a>
+                    </div>
+                </div>
+
+                <div class="w-100 mt-3">
+                    <ul class="nav justify-content-center text-uppercase gap-4" style="font-size: 13px; list-style: none; padding: 0; display: flex; flex-wrap: nowrap;">
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="../templates/index.html">главная</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark active" href="catalog.html">каталог</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="brands.html">бренды</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="stocks.html">акции</a></li>
+                        <li class="nav-item"><a class="nav-link p-0 text-dark" href="../pages/news.html">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <h1 class="text-uppercase mb-5 border-bottom pb-3">Каталог продукции</h1>
+        
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mb-5">
+            
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/Lois.png" class="card-img-top" alt="Lacoste">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Lacoste</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">L/12 Pure</p>
+                        <p class="fw-bold">13 400₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/Chanel.png" class="card-img-top" alt="Chanel">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Chanel</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Bleu de Chanel</p>
+                        <p class="fw-bold">14 500 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/Creed.png" class="card-img-top" alt="Creed">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Creed</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Aventus</p>
+                        <p class="fw-bold">28 900 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/Gucci.png" class="card-img-top" alt="Gucci">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Gucci</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Bloom</p>
+                        <p class="fw-bold">9 800 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/том форд.png" class="card-img-top" alt="Tom Ford">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Tom Ford</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Tobacco Vanille</p>
+                        <p class="fw-bold">19 200 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/default-perfume.png" class="card-img-top" alt="Dior">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Dior</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Sauvage</p>
+                        <p class="fw-bold">11 300 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/default-perfume.png" class="card-img-top" alt="Byredo">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Byredo</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Bal d'Afrique</p>
+                        <p class="fw-bold">22 100 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/default-perfume.png" class="card-img-top" alt="Versace">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Versace</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Eros</p>
+                        <p class="fw-bold">8 400 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/default-perfume.png" class="card-img-top" alt="Amouage">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Amouage</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Reflection</p>
+                        <p class="fw-bold">34 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
+                    <div class="card-img-wrapper">
+                        <img src="../img/default-perfume.png" class="card-img-top" alt="Jo Malone">
+                    </div>
+                    <div class="card-body text-center">
+                        <h6 class="text-uppercase small mb-1">Jo Malone</h6>
+                        <p class="text-muted mb-2" style="font-size: 11px;">Lime Basil</p>
+                        <p class="fw-bold">6 100 ₽</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-body p-5">
+                    <div class="text-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="text-center mb-4">
+                        <h4 class="text-uppercase fw-bold mb-3" style="letter-spacing: 2px;">Присоединяйтесь</h4>
+                        <p class="text-muted small">Войдите или создайте аккаунт, чтобы просмотреть подробные характеристики аромата и оформить заказ.</p>
+                    </div>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg fs-6" placeholder="Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="password" class="form-control form-control-lg fs-6" placeholder="Пароль" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-3 text-uppercase small">Войти в кабинет</button>
+                    </form>
+                    <div class="mt-4 pt-3 border-top text-center">
+                        <a href="#" class="text-muted small text-decoration-none">У меня еще нет аккаунта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer bg-white border-top py-5 text-center mt-5">
+    <div class="container">
+        <div class="logo mb-4">Oudomania</div>
+        <div class="d-flex justify-content-center gap-4 mb-4 small text-uppercase" style="letter-spacing: 1px;">
+            <a href="https://instagram.com/ТВОЙ_НИК" class="text-muted text-decoration-none" target="_blank">Instagram</a>
+            <a href="https://t.me/AirParfum_bot" class="text-muted text-decoration-none" target="_blank">Telegram</a>
+            <a href="https://wa.me/79000000000" class="text-muted text-decoration-none" target="_blank">WhatsApp</a>
+        </div>
+        <p class="text-muted" style="font-size: 11px;">© 2026 OUDOMANIA SHOP. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
+:root {
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'Playfair Display', serif;
+    --dark: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--dark);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.logo {
+    font-family: var(--accent-font);
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark) !important;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.nav a:hover, .nav a.active {
+    color: var(--dark);
+    transform: translateY(-1px);
+}
+
+.hero-banner {
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center; 
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+    border: none !important;
+    background: transparent;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+}
+
+.card-img-wrapper {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.card-img-top {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.6s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+    padding: 12px 0;
+    background: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--dark);
+}
+
+.btn-dark {
+    background: var(--dark);
+    border-radius: 0;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background: #333;
+}
+
+.brand-letter {
+    font-family: var(--accent-font);
+    font-size: 2.5rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1.5rem;
+}
+
+.brand-link {
+    color: #666;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.brand-link:hover {
+    color: var(--dark);
+    padding-left: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--dark);
+}
+
+@media (max-width: 768px) {
+    .hero-banner { height: 400px; }
+    .card-img-wrapper { height: 250px; }
+    .logo { font-size: 22px; }
+}
