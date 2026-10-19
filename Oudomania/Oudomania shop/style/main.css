@@ -100,6 +100,26 @@ body {
     border-color: var(--dark);
 }
 
+.oudomania-signup .form-label {
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.oudomania-signup .form-control {
+    font-size: 0.95rem;
+}
+
+.oudomania-signup .invalid-feedback {
+    font-size: 0.75rem;
+}
+
+.signup-success {
+    color: #45634d;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
 .btn-dark {
     background: var(--dark);
     border-radius: 0;
