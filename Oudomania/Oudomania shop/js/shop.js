@@ -29,6 +29,14 @@
     }
 
     function getProduct(button) {
+        if (button.dataset.product) {
+            try {
+                const product = JSON.parse(button.dataset.product);
+                return { id: product.id, name: product.name, brand: product.brand, price: product.price, image: product.image, quantity: 1 };
+            } catch {
+                return null;
+            }
+        }
         const card = button.closest('.card');
         if (!card) return null;
         const name = card.querySelector('h5, h6')?.textContent.trim();

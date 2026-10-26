@@ -43,7 +43,8 @@
     <main class="container py-5">
         <h1 class="text-uppercase mb-5 border-bottom pb-3">Каталог продукции</h1>
         
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mb-5">
+        <p class="text-muted mb-4">Выберите аромат, чтобы посмотреть его описание и характеристики.</p>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mb-5" data-perfume-list aria-live="polite">
             
             <div class="col">
                 <div class="card border-0 shadow-sm h-100 hover-up" data-bs-toggle="modal" data-bs-target="#authModal" style="cursor: pointer;">
@@ -179,6 +180,34 @@
 
     </main>
 
+    <div class="modal fade" id="perfumeDetailModal" tabindex="-1" aria-labelledby="perfumeDetailTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0">
+                    <p class="text-uppercase text-muted small mb-0" data-detail-brand></p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5 text-center"><img data-detail-image class="img-fluid" style="max-height:320px;object-fit:contain" alt=""></div>
+                        <div class="col-md-7">
+                            <h2 class="h3 text-uppercase" id="perfumeDetailTitle" data-detail-name></h2>
+                            <p class="h5 mb-4" data-detail-price></p>
+                            <p data-detail-description></p>
+                            <dl class="row small">
+                                <dt class="col-4">Объём</dt><dd class="col-8" data-detail-volume></dd>
+                                <dt class="col-4">Для кого</dt><dd class="col-8" data-detail-gender></dd>
+                                <dt class="col-4">Семейство</dt><dd class="col-8" data-detail-family></dd>
+                                <dt class="col-4">Ноты</dt><dd class="col-8" data-detail-notes></dd>
+                            </dl>
+                            <button type="button" class="btn btn-dark text-uppercase" data-detail-add data-cart-add>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content rounded-0">
@@ -235,5 +264,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/validation.js"></script>
+    <script src="../js/shop.js"></script>
+    <script src="../js/catalog.js"></script>
 </body>
 </html>
