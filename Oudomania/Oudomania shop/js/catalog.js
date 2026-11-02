@@ -4,6 +4,32 @@
     const list = document.querySelector('[data-perfume-list]');
     if (!list) return;
 
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('main h1')?.classList.add('catalog-title-enter');
+    });
+
+
+    list.addEventListener('pointerover', (event) => {
+        const image = event.target.closest('.card-img-top');
+        if (!image || image.contains(event.relatedTarget)) return;
+        image.classList.remove('perfume-image-wiggle');
+        void image.offsetWidth;
+        image.classList.add('perfume-image-wiggle');
+    });
+
+
+    list.addEventListener('click', (event) => {
+        const card = event.target.closest('.card');
+        if (!card) return;
+        card.classList.remove('perfume-card-tap');
+        void card.offsetWidth;
+        card.classList.add('perfume-card-tap');
+    });
+
+    list.addEventListener('animationend', (event) => {
+        event.target.classList.remove('perfume-image-wiggle', 'perfume-card-tap');
+    });
+
     const money = (price) => `${new Intl.NumberFormat('ru-RU').format(price)} ₽`;
     const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -30,6 +56,12 @@
                         </div>
                     </article>
                 </div>`).join('');
+
+            // Плавное появление карточек с небольшой задержкой для каждой.
+            list.querySelectorAll('.col').forEach((card, index) => {
+                card.classList.add('catalog-card-enter');
+                card.style.setProperty('--card-order', index);
+            });
 
             document.dispatchEvent(new CustomEvent('oudomania:catalog-ready', { detail: perfumes }));
         })
