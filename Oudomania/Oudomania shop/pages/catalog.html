@@ -44,6 +44,15 @@
         <h1 class="text-uppercase mb-5 border-bottom pb-3">Каталог продукции</h1>
         
         <p class="text-muted mb-4">Выберите аромат, чтобы посмотреть его описание и характеристики.</p>
+        <section class="catalog-manager mb-4 p-3 p-md-4 border bg-light" aria-labelledby="catalogManagerTitle">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <div>
+                    <h2 class="h6 text-uppercase mb-1" id="catalogManagerTitle">Управление каталогом</h2>
+                    <p class="small text-muted mb-0" data-catalog-status>Изменения сохраняются в этом браузере.</p>
+                </div>
+                <button class="btn btn-dark btn-sm text-uppercase" type="button" data-product-create>Добавить аромат</button>
+            </div>
+        </section>
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mb-5" data-perfume-list aria-live="polite">
             
             <div class="col">
@@ -179,6 +188,34 @@
         </div>
 
     </main>
+
+    <div class="modal fade" id="productEditorModal" tabindex="-1" aria-labelledby="productEditorTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content rounded-0">
+                <form data-product-form>
+                    <div class="modal-header">
+                        <h2 class="modal-title h5 text-uppercase" id="productEditorTitle" data-editor-title>Новый аромат</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="id">
+                        <div class="row g-3">
+                            <div class="col-md-6"><label class="form-label" for="product-brand">Бренд</label><input class="form-control" id="product-brand" name="brand" required maxlength="80"></div>
+                            <div class="col-md-6"><label class="form-label" for="product-name">Название аромата</label><input class="form-control" id="product-name" name="name" required maxlength="120"></div>
+                            <div class="col-md-6"><label class="form-label" for="product-price">Цена, ₽</label><input class="form-control" id="product-price" name="price" type="number" min="1" step="1" required></div>
+                            <div class="col-md-6"><label class="form-label" for="product-volume">Объём</label><input class="form-control" id="product-volume" name="volume" placeholder="100 мл" required maxlength="40"></div>
+                            <div class="col-md-6"><label class="form-label" for="product-gender">Для кого</label><input class="form-control" id="product-gender" name="gender" placeholder="Унисекс" required maxlength="60"></div>
+                            <div class="col-md-6"><label class="form-label" for="product-family">Семейство аромата</label><input class="form-control" id="product-family" name="family" required maxlength="120"></div>
+                            <div class="col-12"><label class="form-label" for="product-notes">Ноты</label><input class="form-control" id="product-notes" name="notes" required maxlength="250"></div>
+                            <div class="col-12"><label class="form-label" for="product-image">Путь к фото или URL</label><input class="form-control" id="product-image" name="image" placeholder="../img/Chanel.png" required maxlength="500"></div>
+                            <div class="col-12"><label class="form-label" for="product-description">Описание</label><textarea class="form-control" id="product-description" name="description" rows="3" required maxlength="600"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button><button type="submit" class="btn btn-dark">Сохранить аромат</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="perfumeDetailModal" tabindex="-1" aria-labelledby="perfumeDetailTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
